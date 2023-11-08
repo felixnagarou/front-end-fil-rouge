@@ -1,0 +1,16 @@
+#navbar  {
+  border-radius: 10px;
+  background-color: lightgrey;
+
+  & ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+#navbar >li {
+  color: darkslategray;
+  display: inline-flex;
+  text-align: justify;
+  margin: 5%;
+}

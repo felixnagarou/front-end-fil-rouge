@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import {ConfigService} from "../../services/config.service";
 import {Config} from "../../config/Config";
-import * as http from "http";
 import {HttpClient, HttpResponse} from "@angular/common/http";
 import {Observable} from "rxjs";
+
 
 @Component({
   selector: 'app-config',
@@ -11,23 +11,29 @@ import {Observable} from "rxjs";
   styleUrls: ['./config.component.css']
 })
 export class ConfigComponent {
+ // constructor(private http:HttpClient) {
+ //   let headers = {
+ //     'Authorization': `Bearer ${}`
+ //   }
+ // }
 
-  private http
-  private configService  = new ConfigService(this.http)
 
-  private configuration:Config|undefined
+// private configService  = new ConfigService(this.http)
 
- showConfig(){
-    this.configService.getConfig().subscribe((data:Config) => this.configuration = {
-      sourceUrl: (data as any).sourceUrl
-    })
- }
+// private configuration:Config|undefined
 
- getConfigResponse(): Observable<HttpResponse<Config>>{
-    return  this.http.get<Config>(
-      this.configuration, {observe: 'response'}
-    );
- }
+//showConfig(){
+//   this.configService.getConfig().subscribe((data:Config) => this.configuration = {
+//     sourceUrl: (data as any).sourceUrl
+//   })
+//}
+
+//getConfigResponse(): Observable<HttpResponse<Config>>{
+//   return  this.http.get<Config>(
+//     this.configuration, {observe: 'response'}
+//   );
+//}
+
 
 
 
