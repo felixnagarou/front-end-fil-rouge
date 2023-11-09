@@ -55,8 +55,4 @@ export class MovieService {
       //admin headers
     })
   }
-
-
-
-
 }

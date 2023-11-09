@@ -1,3 +1,11 @@
-
+<ul id="navbar">
+  <li><a [routerLink]="['/home']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Accueil</a></li>
+  <li><a [routerLink]="['/userFeatures']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Paramètres</a></li>
+  <li><a [routerLink]="['/favorites']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Mes favoris</a></li>
+  <li><a [routerLink]="['/history']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Historique</a></li>
+</ul>
+<app-search-bar></app-search-bar>
+<router-outlet></router-outlet>
 <p>BIENVENUE</p>
+<app-recommendations></app-recommendations>
 

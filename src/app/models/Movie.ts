@@ -23,4 +23,6 @@ export interface Movie {
 
    keywords: string[];
 
+   evaluations: string[];
+
 }

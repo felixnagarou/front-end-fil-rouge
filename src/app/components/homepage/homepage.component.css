@@ -1,0 +1,27 @@
+#navbar  {
+  border-radius: 5px;
+  background-image: linear-gradient(rgba(0,0,0,0.79), black) ;
+  opacity: 95%;
+  height: 100%;
+  width: 12%;
+  z-index: 1;
+  position:fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  list-style: none;
+}
+
+
+li{
+  margin: 10%;
+  display: block;
+
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+

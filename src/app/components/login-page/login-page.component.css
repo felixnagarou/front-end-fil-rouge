@@ -1,0 +1,48 @@
+
+form{
+  border-radius: 10px;
+  border-color: navajowhite;
+  background-color: white;
+  margin-top: 100px;
+  margin-left: 75px;
+  margin-right: 75px;
+  justify-content: center;
+  text-align: center;
+  padding: 2% 5% 5%;
+  display: block;
+}
+label{
+  color: #b3b0b3;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+input{
+  width: 75%;
+  height: 30px;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightgrey;
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+button{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: ghostwhite;
+  border-style: none;
+  border-radius: 10px;
+  background-color: forestgreen;
+  appearance: none;
+}
+
+#noAccountMessage{
+  margin-top: 5px;
+  text-align: center;
+}

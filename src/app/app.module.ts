@@ -15,6 +15,13 @@ import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { UserProfileParametersComponent } from './components/user-profile-parameters/user-profile-parameters.component';
 import { UserPreferencesParametersComponent } from './components/user-preferences-parameters/user-preferences-parameters.component';
+import { ListComponent } from './components/list/list.component';
+import { LoginPageComponent } from './components/login-page/login-page.component';
+import { RecommendationsComponent } from './components/recommendations/recommendations.component';
+import { FavoritesComponent } from './components/favorites/favorites.component';
+import { MovieListingComponent } from './components/movie-listing/movie-listing.component';
+import { HistoryComponent } from './components/history/history.component';
+import { UserAccountParametersComponent } from './components/user-account-parameters/user-account-parameters.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +35,14 @@ import { UserPreferencesParametersComponent } from './components/user-preference
     Error404Component,
     SearchBarComponent,
     UserProfileParametersComponent,
-    UserPreferencesParametersComponent
+    UserPreferencesParametersComponent,
+    ListComponent,
+    LoginPageComponent,
+    RecommendationsComponent,
+    FavoritesComponent,
+    MovieListingComponent,
+    HistoryComponent,
+    UserAccountParametersComponent
   ],
   imports: [
     BrowserModule,
