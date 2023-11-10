@@ -22,6 +22,9 @@ import { FavoritesComponent } from './components/favorites/favorites.component';
 import { MovieListingComponent } from './components/movie-listing/movie-listing.component';
 import { HistoryComponent } from './components/history/history.component';
 import { UserAccountParametersComponent } from './components/user-account-parameters/user-account-parameters.component';
+import { TagsDisplayComponent } from './components/tags-display/tags-display.component';
+import { CategoriesDisplayComponent } from './components/categories-display/categories-display.component';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { UserAccountParametersComponent } from './components/user-account-parame
     FavoritesComponent,
     MovieListingComponent,
     HistoryComponent,
-    UserAccountParametersComponent
+    UserAccountParametersComponent,
+    TagsDisplayComponent,
+    CategoriesDisplayComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,34 @@
-#search{
-
-  width: 200px;
+#searchBar{
   display: block;
+}
+
+#search{
+  justify-content: center;
+  border-radius: 5px;
+  width: 90%;
+  font-size: larger;
+  display: inline-block;
+}
+
+#searchFilters{
+  display: block;
+}
+
+#searchUtil{
+  height: fit-content;
+  width: 60%;
+  position: fixed;
+  left: 10%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
   margin: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: thin;
+  border-radius: 5px;
+  z-index: 999;
+  background-image: linear-gradient(to bottom, rgba(32,28,34,0.95), grey, rgba(166,158,169,0.47));
+
 }

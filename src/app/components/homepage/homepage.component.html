@@ -1,11 +1,32 @@
-<ul id="navbar">
-  <li><a [routerLink]="['/home']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Accueil</a></li>
-  <li><a [routerLink]="['/userFeatures']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Paramètres</a></li>
-  <li><a [routerLink]="['/favorites']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Mes favoris</a></li>
-  <li><a [routerLink]="['/history']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Historique</a></li>
-</ul>
-<app-search-bar></app-search-bar>
-<router-outlet></router-outlet>
-<p>BIENVENUE</p>
-<app-recommendations></app-recommendations>
 
+<div id="navigation">
+<button class="navBarButton">
+  |||
+</button>
+<
+</div>
+
+<div id="maincontent">
+<app-search-bar></app-search-bar>
+  <app-search-results></app-search-results>
+<app-recommendations></app-recommendations>
+<router-outlet></router-outlet>
+</div>
+
+
+
+<table>
+  <tr>ul id="navbar">
+    <td>
+      <button><a [routerLink]="['/home']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Accueil</a></button><hr></td>
+    <td>
+      <button><a [routerLink]="['/userFeatures']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Paramètres</a></button><hr>
+    </td>
+    <td>
+      <button><a [routerLink]="['/favorites']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Mes favoris</a></button><hr>
+    </td>
+    <td>
+      <button><a [routerLink]="['/history']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Historique</a></button><hr>
+    </td>
+    </tr>
+</table>

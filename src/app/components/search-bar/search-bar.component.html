@@ -1,8 +1,13 @@
-<p>search-bar works!</p>
+
+<div id="searchUtil">
 <form action="#" id="searchBar">
-  <div>
-    <label for="search"></label>
-    <input id="search" name="search" type="text" placeholder="Search for a movie or a serie here">
+  <label for="search"></label>
+  <input id="search" name="search" type="text" placeholder="Search for a movie or a serie here">
+  <div id="searchFilters">
+  <app-categories-display></app-categories-display>
+  <app-tags-display></app-tags-display>
   </div>
 </form>
+</div>
+
 

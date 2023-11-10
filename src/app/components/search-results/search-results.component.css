@@ -1,0 +1,18 @@
+
+table{
+  position: absolute;
+  margin: 30%;
+  table-border-color-dark: darkviolet;
+  border: 1px solid #f00;
+  border-radius: 10px;
+
+
+}
+
+tr{
+}
+td{
+  display: block;
+  padding: 25px;
+
+}
