@@ -12,8 +12,8 @@ h3 {
 #individualBlock {
     /* flex: ; */
     > img {
-        height: 310px;
-        width: 223px;
+        height: 268px;
+        width: 182px;
         padding: 0px 10px 0px 10px;  
     }
     
@@ -31,8 +31,8 @@ h3 {
     #individualBlock {
         /* flex: ; */
         > img {
-            height: 310px;
-            width: 223px;
+            height: 268px;
+            width: 182px;
             padding: 0px 10px 0px 10px;  
         }
         
