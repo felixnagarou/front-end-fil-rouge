@@ -1,0 +1,45 @@
+h3 {
+    color: blue;
+}
+
+#mainBlock {
+    display: flex;
+    height: 350px;
+    flex-direction: row;
+
+}
+
+#individualBlock {
+    /* flex: ; */
+    > img {
+        height: 310px;
+        width: 223px;
+        padding: 0px 10px 0px 10px;  
+    }
+    
+}
+
+@media all and (max-width: 390px)  {
+    #mainBlock {
+        display: flex;
+        height: 350px;
+        flex-direction: row;
+        margin: 20px 0 20px 0;
+
+    }
+
+    #individualBlock {
+        /* flex: ; */
+        > img {
+            height: 310px;
+            width: 223px;
+            padding: 0px 10px 0px 10px;  
+        }
+        
+    }
+
+    h3 {
+        color: red;
+    }
+}
+
