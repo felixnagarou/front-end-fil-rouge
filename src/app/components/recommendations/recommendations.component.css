@@ -9,7 +9,7 @@ h3 {
 
 #mainBlock {
     display: grid;
-    grid-template-columns: repeat(2,100%);
+    grid-template-columns: repeat(1,100%);
     scroll-behavior: smooth;
     height: 268px;
     width: 100%;
@@ -45,8 +45,9 @@ color: #fff;
 text-decoration: none;
 font-size: 6em;
 background:rgba(255, 254, 254, 0.384);
-width: 80px;
+width: 40px;
 height: 268px;
+border-radius: 10px;
 
 z-index: 1;
 
