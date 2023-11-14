@@ -19,9 +19,8 @@ import {HistoryComponent} from "../components/history/history.component";
 const routes:Routes = [
   {path: '', component:LoginPageComponent},
   {path:'home', component:HomepageComponent},
-  {path:'movie-listing', component:MovieListingComponent, children:[
-      {path:'movie-details', component:MovieDetailsComponent},
-    ]},
+  {path:'movie-listing', component:MovieListingComponent},
+  {path:'movie-details', component:MovieDetailsComponent},
   {path:'movie-thumbnail', component:MovieThumbnailComponent},
   {path:'userFeatures', component:UserProfileParametersComponent, children:[
       {path: 'parameters', component: UserAccountParametersComponent},
