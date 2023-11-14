@@ -1,24 +1,23 @@
-<!-- <table>
-<tr id="resultsTable">
-  <td>
-    >
-  </td>
-  <td>
-    >Title
-  </td>
-  <td>
-    >Director
-  </td>
-  <td>
-    >Year
-  </td>
-</tr>
-</table> -->
-
 <div id="mainBlock">
+  <a href="arrow-minus-1" id="arrow__btn"><div id="fleche">‹</div></a>
     <section id="result">
-        <a href="" class="arrow__btn"><div id="fleche">‹</div></a>
-        <div id="individualBlock">
+      <div id="individualBlock">
+          <button>
+            <a id="redirect" [routerLink]="['']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">
+              <img src="https://source.unsplash.com/random/300x250" alt="random image">
+              <div id="hiddentext">
+                <p>
+                  Tilte <br>
+                  Director <br>
+                  Year <br>
+                  Rate <br>
+                </p>
+              </div>
+            </a>
+          </button>
+      </div>
+      <div id="individualBlock">
+          <button><a id="redirect" [routerLink]="['']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">
             <img src="https://source.unsplash.com/random/300x250" alt="random image">
             <div id="hiddentext">
               <ul>
@@ -28,24 +27,54 @@
                 <li>Rate</li>
               </ul>
             </div>
-        </div>
-        <div id="individualBlock">
+          </a>
+          </button>
+      </div>
+      <div id="individualBlock">
+          <button><a id="redirect" [routerLink]="['']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">
             <img src="https://source.unsplash.com/random/300x250" alt="random image">
-            <div id="hiddentext">contenu caché</div>
-        </div>
-        <div id="individualBlock">
+            <div id="hiddentext">
+              <ul>
+                <li>Tilte</li>
+                <li>Director</li>
+                <li>Year</li>
+                <li>Rate</li>
+              </ul>
+            </div>
+          </a>
+          </button>
+      </div>
+      <div id="individualBlock">
+          <button><a id="redirect" [routerLink]="['']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">
             <img src="https://source.unsplash.com/random/300x250" alt="random image">
-            <div id="hiddentext">contenu caché</div>
-        </div>
-        <div id="individualBlock">
+            <div id="hiddentext">
+              <ul>
+                <li>Tilte</li>
+                <li>Director</li>
+                <li>Year</li>
+                <li>Rate</li>
+              </ul>
+            </div>
+          </a>
+          </button>
+      </div>
+      <div id="individualBlock">
+          <button><a id="redirect" [routerLink]="['']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">
             <img src="https://source.unsplash.com/random/300x250" alt="random image">
-            <div id="hiddentext">contenu caché</div>
-        </div>
-        <div id="individualBlock">
-            <img src="https://source.unsplash.com/random/300x250" alt="random image">
-            <div id="hiddentext">contenu caché</div>
-        </div>
-        <a href="" class="arrow__btn"><div id="fleche">›</div></a> 
+            <div id="hiddentext">
+              <ul>
+                <li>Tilte</li>
+                <li>Director</li>
+                <li>Year</li>
+                <li>Rate</li>
+              </ul>
+            </div>
+          </a>
+          </button>
+      </div>
+        
+        
     </section>
+    <a href="arrow-plus-1" id="arrow__btn"><div id="fleche">›</div></a> 
 </div>
 

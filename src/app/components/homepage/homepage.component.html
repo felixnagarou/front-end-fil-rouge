@@ -8,7 +8,8 @@
 
 <div id="maincontent">
 <app-search-bar></app-search-bar>
-  <app-search-results></app-search-results>
+<app-search-results></app-search-results>
+<div id="emptyBlock"></div>
 <app-recommendations></app-recommendations>
 <router-outlet></router-outlet>
 </div>
@@ -18,7 +19,8 @@
 <table>
   <tr>
     <td>
-      <button><a [routerLink]="['/home']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Accueil</a></button><hr></td>
+      <button><a [routerLink]="['/home']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Accueil</a></button><hr>
+    </td>
     <td>
       <button><a [routerLink]="['/userFeatures']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">Paramètres</a></button><hr>
     </td>
