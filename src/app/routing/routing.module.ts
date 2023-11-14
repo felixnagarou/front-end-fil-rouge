@@ -14,6 +14,8 @@ import {
 import {LoginPageComponent} from "../components/login-page/login-page.component";
 import {UserAccountParametersComponent} from "../components/user-account-parameters/user-account-parameters.component";
 import {HistoryComponent} from "../components/history/history.component";
+import { SerieDetailsComponent } from '../components/serie-details/serie-details.component';
+import { EpisodeDetailsComponent } from '../components/episode-details/episode-details.component';
 
 
 const routes:Routes = [
@@ -21,6 +23,8 @@ const routes:Routes = [
   {path:'home', component:HomepageComponent},
   {path:'movie-listing', component:MovieListingComponent},
   {path:'movie-details', component:MovieDetailsComponent},
+  {path:'serie-details', component:SerieDetailsComponent},
+  {path:'episode-details', component:EpisodeDetailsComponent},
   {path:'movie-thumbnail', component:MovieThumbnailComponent},
   {path:'userFeatures', component:UserProfileParametersComponent, children:[
       {path: 'parameters', component: UserAccountParametersComponent},

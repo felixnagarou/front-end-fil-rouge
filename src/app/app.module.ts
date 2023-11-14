@@ -25,6 +25,8 @@ import { UserAccountParametersComponent } from './components/user-account-parame
 import { TagsDisplayComponent } from './components/tags-display/tags-display.component';
 import { CategoriesDisplayComponent } from './components/categories-display/categories-display.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { SerieDetailsComponent } from './components/serie-details/serie-details.component';
+import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,9 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     UserAccountParametersComponent,
     TagsDisplayComponent,
     CategoriesDisplayComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    SerieDetailsComponent,
+    EpisodeDetailsComponent
   ],
   imports: [
     BrowserModule,
