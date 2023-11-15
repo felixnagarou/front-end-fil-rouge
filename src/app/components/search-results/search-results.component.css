@@ -9,7 +9,8 @@
   height: 250px;
   width: 61%;
   border-radius: 10px;
-  background-color: rgba(166,158,169,0.47);
+  background-color: rgba(166,158,169,0.9);
+  z-index: 998;
 }
 
 section {
