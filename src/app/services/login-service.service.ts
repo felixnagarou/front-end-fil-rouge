@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {User} from "../models/User";
 
 @Injectable({
@@ -12,7 +12,9 @@ export class LoginServiceService {
     this.authUrl = "http://localhost:8080/auth"
   }
 
-  addUser(user:User){
-    return this.http.post<User>()
+  registerUser(user:User){
+    return this.http.post<User>(this.authUrl + "authenticate", user, {
+      headers:new HttpHeaders()
+    })
   }
 }
