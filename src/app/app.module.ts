@@ -27,6 +27,7 @@ import { CategoriesDisplayComponent } from './components/categories-display/cate
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { SerieDetailsComponent } from './components/serie-details/serie-details.component';
 import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
+import { EvaluationComponent } from './components/evaluation/evaluation.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { EpisodeDetailsComponent } from './components/episode-details/episode-de
     CategoriesDisplayComponent,
     SearchResultsComponent,
     SerieDetailsComponent,
-    EpisodeDetailsComponent
+    EpisodeDetailsComponent,
+    EvaluationComponent
   ],
   imports: [
     BrowserModule,
