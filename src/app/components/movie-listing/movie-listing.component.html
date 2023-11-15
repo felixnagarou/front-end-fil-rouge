@@ -1,1 +1,11 @@
 <p>movie-listing works!</p>
+<table>
+<tr *ngFor="let movie of movies">
+  <td>{{movie.title}}</td>
+  <td>
+    <button id="redirect" [routerLink]="['movie-details']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">
+    <img src="{{movie.banner}}"  alt="" [ngStyle]="{ 'max-width' : '63%', 'margin-left': 'auto', 'margin-right':'auto', 'display' : 'flex' }">
+    </button>
+  </td>
+</tr>
+</table>

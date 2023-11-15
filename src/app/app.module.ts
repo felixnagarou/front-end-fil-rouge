@@ -27,6 +27,8 @@ import { CategoriesDisplayComponent } from './components/categories-display/cate
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { SerieDetailsComponent } from './components/serie-details/serie-details.component';
 import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
+import {FormsModule} from "@angular/forms";
+import { SerieListingComponent } from './components/serie-listing/serie-listing.component';
 
 @NgModule({
   declarations: [
@@ -52,16 +54,18 @@ import { EpisodeDetailsComponent } from './components/episode-details/episode-de
     CategoriesDisplayComponent,
     SearchResultsComponent,
     SerieDetailsComponent,
-    EpisodeDetailsComponent
+    EpisodeDetailsComponent,
+    SerieListingComponent
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    RoutingModule,
-    RouterOutlet,
-    RouterLink,
-    RouterLinkActive
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        RoutingModule,
+        RouterOutlet,
+        RouterLink,
+        RouterLinkActive,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

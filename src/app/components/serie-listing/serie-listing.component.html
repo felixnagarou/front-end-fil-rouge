@@ -1,0 +1,12 @@
+<p>movie-listing works!</p>
+<table>
+  <tr *ngFor="let serie of series">
+    <td>{{serie.title}}</td>
+    <td>
+      <button id="redirect" [routerLink]="['serie-details']" [routerLinkActive]="'active'"  [routerLinkActiveOptions]="{exact:true}">
+        <img src="{{serie.banner}}"  alt="" [ngStyle]="{ 'max-width' : '63%', 'margin-left': 'auto', 'margin-right':'auto', 'display' : 'flex' }">
+      </button>
+    </td>
+  </tr>
+</table>
+

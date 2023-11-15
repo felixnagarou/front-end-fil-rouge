@@ -1,8 +1,8 @@
-<form action="#">
+<form (ngSubmit)="onSubmit()" #userForm="ngForm">
   <div><label for="id"></label></div>
-  <div><input id="id" name="id" type="text" required placeholder="Identifiant"></div>
+  <div><input id="id" name="id" type="text" [(ngModel)]="user.name" required #name="ngModel" placeholder="Identifiant"></div>
   <div><label for="password"></label></div>
-  <div><input id="password" name="password" type="text" required placeholder="Mot de passe"></div>
+  <div><input id="password" name="password" type="text" [(ngModel)]="user.password" required placeholder="Mot de passe"></div>
   <div><button id="validateLogIn">Valider</button></div>
 </form>
 <div>
