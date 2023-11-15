@@ -1,17 +1,7 @@
-<table id="keywordsList">
-  <tr>
-    <td>
-     Keywords :
-    </td>
-    <td>
-      <button>Female protagonist</button></td>
-    <td>
-      <button>Test</button></td>
-    <td>
-      <button>??</button></td>
-    <td>
-      <button>???</button></td>
-    <td>
-      <button>??????</button></td>
+<table>
+
+  <tr *ngFor="let keyword of keywords">
+    <td><button>{{keyword.kerywordName}}</button></td>
   </tr>
 </table>
+

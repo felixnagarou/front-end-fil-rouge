@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-import {Movie} from "../../models/Movie";
-import {MovieService} from "../../services/movie.service";
+import {Component, OnInit} from '@angular/core';
 import {Serie} from "../../models/Serie";
 import {SerieServiceService} from "../../services/serie-service.service";
 
@@ -9,7 +7,7 @@ import {SerieServiceService} from "../../services/serie-service.service";
   templateUrl: './serie-listing.component.html',
   styleUrls: ['./serie-listing.component.css']
 })
-export class SerieListingComponent {
+export class SerieListingComponent implements OnInit{
   series:Serie[] = [];
 
   constructor(private serieService: SerieServiceService) {
