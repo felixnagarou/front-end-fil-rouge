@@ -20,22 +20,45 @@ export class MovieService {
     return this.http.get<Movie>(this.configurl)
   }
 
+  getAllMovies(){
+    return this.http.get<Movie[]>(this.configurl + "movies",{
+      headers: new HttpHeaders()
+    })
+  }
+
   postMovie(){
     return this.http.post<PostAPIResponse>(this.configurl, {
     })
   }
 
-  getMovieByTitle(title:string){
-    return this.http.get<Movie>(this.configurl + title, {
+  getMoviesByTitle(title:string){
+    return this.http.get<Movie[]>(this.configurl + title, {
       headers: new HttpHeaders()
       //todo Authorization avec token etc
     })
   }
 
+  getMoviesByCategory(categoryName:string){
+    return this.http.get<Movie[]>(this.configurl + categoryName, {
+      headers: new  HttpHeaders()
+    })
+  }
 
-  getCategories(){
-    return this.http.get<Category>(this.configurl + "categories", {
-      headers:new  HttpHeaders()
+  getMoviesByKeyword(keywordName:string){
+    return this.http.get<Movie[]>(this.configurl + keywordName, {
+      headers: new  HttpHeaders()
+    })
+  }
+
+  getMoviesByYear(year:number){
+    return this.http.get<Movie[]>(this.configurl + year, {
+      headers: new  HttpHeaders()
+    })
+  }
+
+  getMoviesByCastMember(castMemberName:string){
+    return this.http.get<Movie[]>(this.configurl + castMemberName , {
+      headers: new HttpHeaders()
     })
   }
 
@@ -55,4 +78,5 @@ export class MovieService {
       //admin headers
     })
   }
+
 }
