@@ -28,6 +28,7 @@ import { SearchResultsComponent } from './components/search-results/search-resul
 import { SerieDetailsComponent } from './components/serie-details/serie-details.component';
 import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
 import { EvaluationComponent } from './components/evaluation/evaluation.component';
+import { CommentsComponent } from './components/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { EvaluationComponent } from './components/evaluation/evaluation.componen
     SearchResultsComponent,
     SerieDetailsComponent,
     EpisodeDetailsComponent,
-    EvaluationComponent
+    EvaluationComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,

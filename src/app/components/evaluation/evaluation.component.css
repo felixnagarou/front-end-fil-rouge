@@ -4,8 +4,6 @@ h2 {
     color: #FFF8F8;
 }
 
-
-
 #range {
     z-index: 2;
 }
@@ -83,9 +81,9 @@ h2 {
     background-color: #22425A;
     border: 1px solid white;
     border-radius:10px;
-    width: 40%;
+    width: 90%;
 }
 
 #comments {
-    width: 40%;
+    width: 90%;
 }
