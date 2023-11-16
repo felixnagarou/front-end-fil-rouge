@@ -1,17 +1,18 @@
 export interface Movie {
 
   //todo KEYWORDS CATEGORY CAST !!!!!
+    id:string
+
+
     title:string;
 
     year:number;
-
-    date:Date;
 
     length:number;
 
     plot:string
 
-     banner:string;
+    banner:string;
 
     trailer:string;
 
