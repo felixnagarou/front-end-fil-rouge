@@ -22,7 +22,7 @@ export class UserServiceService {
 
 
   addUser(user:User){
-    return this.http.put<User>(this.configUrl, user, {
+    return this.http.put<User>(this.configUrl + "auth/register", user, {
       headers: new HttpHeaders()
     })
   }

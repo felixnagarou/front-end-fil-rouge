@@ -1,39 +1,50 @@
-import { Component } from '@angular/core';
+import {Component, OnDestroy} from '@angular/core';
 import {User} from "../../models/User";
-import {ActivatedRoute, Router} from "@angular/router";
-import {UserServiceService} from "../../services/user-service.service";
+import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+import {LoginServiceService} from "../../services/login-service.service";
+import {Subscription} from "rxjs";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.css']
 })
-export class LoginPageComponent {
-  user: User;
+export class LoginPageComponent implements OnDestroy{
+  user: User  = new class implements User {
+    name: string = "";
+    password: string = "";
+  };
+
+  userSub: Subscription | undefined;
+
+  formparametersSubscription: Subscription
+  formMode:string = "authenticate"
 
   constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    private loginService: LoginServiceService) {
+    this.formparametersSubscription = this.route.queryParamMap.subscribe((params : ParamMap) => {
+      this.formMode = params.get('mode') ?? "authenticate"
+        switch (this.formMode){
+          case 'register':
 
-    private userService:UserServiceService
 
-  ) {
-    this.user = new class implements User {
-      set id(value: string) {
-        this.id = value;
+
       }
+    } )
 
-      set name(value: string) {
-        this.name = value
-      }
-
-      set password(value: string){
-        this.password = value
-      }
-
-    }
   }
 
-  onSubmit(){
-    this.userService.addUser(this.user)
+  login(ngForm:NgForm) {
+    this.loginService.authenticate(this.user
+    );
+    console.log(ngForm.form.value)
   }
+
+  ngOnDestroy() {
+  }
+
 
 }

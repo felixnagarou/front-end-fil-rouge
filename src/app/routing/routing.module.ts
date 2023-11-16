@@ -16,12 +16,15 @@ import {UserAccountParametersComponent} from "../components/user-account-paramet
 import {HistoryComponent} from "../components/history/history.component";
 import { SerieDetailsComponent } from '../components/serie-details/serie-details.component';
 import { EpisodeDetailsComponent } from '../components/episode-details/episode-details.component';
+import {SerieListingComponent} from "../components/serie-listing/serie-listing.component";
+import {AppComponent} from "../app.component";
 
 
 const routes:Routes = [
-  {path: '', component:LoginPageComponent},
-  {path:'home', component:HomepageComponent},
-  {path:'movie-listing', component:MovieListingComponent},
+  {path:'', component:LoginPageComponent},
+  {path:'private', component:HomepageComponent},
+  {path:'movie-list', component:MovieListingComponent},
+  {path:'serie-list', component:SerieListingComponent},
   {path:'movie-details', component:MovieDetailsComponent},
   {path:'serie-details', component:SerieDetailsComponent},
   {path:'episode-details', component:EpisodeDetailsComponent},

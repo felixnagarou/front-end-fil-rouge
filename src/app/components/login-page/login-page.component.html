@@ -1,10 +1,11 @@
-<form (ngSubmit)="onSubmit()" #userForm="ngForm">
+<form (ngSubmit)="login(userForm)" #userForm="ngForm" >
   <div><label for="id"></label></div>
-  <div><input id="id" name="id" type="text" [(ngModel)]="user.name" required #name="ngModel" placeholder="Identifiant"></div>
+  <div><input id="id" name="id" type="text" ngModel required  placeholder="Identifiant"></div>
   <div><label for="password"></label></div>
-  <div><input id="password" name="password" type="text" [(ngModel)]="user.password" required placeholder="Mot de passe"></div>
-  <div><button id="validateLogIn">Valider</button></div>
+  <div><input id="password" name="password" type="password" ngModel  required placeholder="Mot de passe"></div>
+  <button  type="submit" id="validateLogIn">Valider</button>
 </form>
 <div>
-  <p id="noAccountMessage">Vous n'avez pas de compte ? <span><a href="">S'inscrire</a></span></p>
+  <p id="noAccountMessage">Vous n'avez pas de compte ? <span><a routerLink="register" >S'inscrire</a></span></p>
 </div>
+<router-outlet></router-outlet>
