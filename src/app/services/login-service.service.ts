@@ -49,7 +49,7 @@ export class LoginServiceService {
     logOut() {
         this.user$.next(null)
         localStorage.removeItem('token')
-        this.router.navigate(['/'])
+        //this.router.navigate(['/'])
     }
 
 

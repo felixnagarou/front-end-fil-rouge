@@ -22,10 +22,10 @@ export class LogToContentComponent {
     this.userSub = this.loginService.user$.subscribe(user => this.user = user)
   }
 
-  ngOnDestroy(): void {
-    this.userSub?.unsubscribe()
-    this.loginService.logOut()
-  }
+ //ngOnDestroy(): void {
+ //  this.userSub?.unsubscribe()
+ //  this.loginService.logOut()
+ //}
 
  // logIn() {
  //   this.loginService.logIn()

@@ -40,8 +40,8 @@ export class LoginPageComponent implements OnDestroy{
   }
 
   login(ngForm:NgForm) {
-    this.formState == 'authenticate' ? this.loginService.authenticate(this.user
-    ) : this.loginService.registerUser(this.user) ;
+    this.formState == 'authenticate' ? this.loginService.authenticate(ngForm.value
+    ) : this.loginService.registerUser(ngForm.value) ;
     console.log(ngForm.form.value)
   }
 

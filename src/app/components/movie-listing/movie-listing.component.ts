@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Movie} from "../../models/Movie";
 import {MovieService} from "../../services/movie.service";
 
@@ -9,13 +9,29 @@ import {MovieService} from "../../services/movie.service";
 })
 export class MovieListingComponent implements OnInit{
   movies:Movie[] = [];
+  @Input()
+  public movieTable= new Map<string, Movie>([])
+  movie:Movie = {
+    banner: "",
+    categories: [],
+    contentRating: "",
+    evaluations: [],
+    keywords: [],
+    length: 0,
+    plot: "",
+    rating: 0,
+    title: "",
+    trailer: "",
+    year: 0
+  }
 
   constructor(private movieService: MovieService) {
   }
 
   ngOnInit(){
-    this.movieService.getAllMovies().subscribe(data => {
-      this.movies = data
+    this.movieService.getMovie().subscribe(data => {
+      this.movie = data
+      this.movieTable.set(this.movie.title, this.movie)
     })
   }
 

@@ -13,15 +13,17 @@ export class MovieService {
 
   constructor(private http:HttpClient) {
   }
-    configurl = "assets/config.json"
+    configurl = "http://localhost:8080/api/v1/private/search/movieList"
+
+  testUrl:string = "http://localhost:8080/api/v1/private/home/search/Inception"
 
 
   getMovie(){
-    return this.http.get<Movie>(this.configurl)
+    return this.http.get<Movie>(this.testUrl)
   }
 
   getAllMovies(){
-    return this.http.get<Movie[]>(this.configurl + "movies",{
+    return this.http.get<Movie[]>(this.configurl ,{
       headers: new HttpHeaders()
     })
   }
