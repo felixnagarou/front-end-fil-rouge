@@ -1,11 +1,22 @@
+
+
 <form (ngSubmit)="login(userForm)" #userForm="ngForm" >
-  <div><label for="id"></label></div>
-  <div><input id="id" name="id" type="text" ngModel required  placeholder="Identifiant"></div>
+  <div><label for="username"></label></div>
+  <div><input id="username" name="username" type="text" ngModel required  placeholder="Identifiant"></div>
   <div><label for="password"></label></div>
   <div><input id="password" name="password" type="password" ngModel  required placeholder="Mot de passe"></div>
   <button  type="submit" id="validateLogIn">Valider</button>
 </form>
-<div>
-  <p id="noAccountMessage">Vous n'avez pas de compte ? <span><a routerLink="register" >S'inscrire</a></span></p>
-</div>
+<ul>
+  <li>
+  <span><button [ngStyle]="{backgroundColor : formState == 'register'? 'cornflowerblue' : 'gray'}" id="switchToRegister"
+                (click)="onRegister()">S'inscrire</button></span>
+  </li>
+  <li>
+    <button [ngStyle]="{backgroundColor : formState == 'authenticate'? 'cornflowerblue' : 'gray'}" id="switchToAuth"
+            (click)="onAuthenticate()">S'identifier</button>
+  </li>
+
+</ul>
+
 <router-outlet></router-outlet>

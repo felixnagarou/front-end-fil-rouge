@@ -19,7 +19,7 @@ export class LoginServiceService {
 
   registerUser(user:User){
     return this.http.post<User>(this.authUrl + "/register", user, {
-      //headers:new HttpHeaders()
+      headers:new HttpHeaders()
 
 
     }).subscribe(userData => this.user$.next(userData))
@@ -28,7 +28,32 @@ export class LoginServiceService {
   authenticate(user:User){
     return this.http.post<User>(this.authUrl + "/authenticate", user, {
 
-      headers:new HttpHeaders()
-    }).subscribe(userData => this.user$.next(userData) )
+
+      headers: {"Authorization" : "Bearer" + this.getAuthToken() }
+    }).subscribe(userData => this.user$.next(userData))
+
+
   }
+
+    getAuthToken():string | null{
+        return window.localStorage.getItem("token");
+    }
+
+    setAuthToken(token:string | null){
+        token !== null ? window.localStorage.setItem("token",token)
+            :window.localStorage.removeItem("token");
+    }
+
+
+
+    logOut() {
+        this.user$.next(null)
+        localStorage.removeItem('token')
+        this.router.navigate(['/'])
+    }
+
+
+
+
+
 }

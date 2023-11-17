@@ -1,0 +1,38 @@
+button{
+  display: inline;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  color: dimgray;
+  border-style: none;
+  border-radius: 10px;
+  background-color: navajowhite;
+  appearance: none;
+}
+
+#logout{
+  background-color: brown;
+  color: white;
+  border-width: thin;
+
+}
+
+
+
+ul{
+
+  margin: auto;
+  padding: 0;
+  list-style: none;
+
+  text-align: center;
+}
+
+li{
+  display: inline;
+  padding: 5px;
+
+
+  appearance: none;
+}

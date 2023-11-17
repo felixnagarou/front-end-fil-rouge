@@ -29,6 +29,8 @@ import { SerieDetailsComponent } from './components/serie-details/serie-details.
 import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
 import {FormsModule} from "@angular/forms";
 import { SerieListingComponent } from './components/serie-listing/serie-listing.component';
+import { LogToContentComponent } from './components/log-to-content/log-to-content.component';
+import { ContentSwitchersComponent } from './components/content-switchers/content-switchers.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,9 @@ import { SerieListingComponent } from './components/serie-listing/serie-listing.
     SearchResultsComponent,
     SerieDetailsComponent,
     EpisodeDetailsComponent,
-    SerieListingComponent
+    SerieListingComponent,
+    LogToContentComponent,
+    ContentSwitchersComponent
   ],
     imports: [
         BrowserModule,

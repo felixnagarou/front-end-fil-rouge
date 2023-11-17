@@ -18,10 +18,11 @@ import { SerieDetailsComponent } from '../components/serie-details/serie-details
 import { EpisodeDetailsComponent } from '../components/episode-details/episode-details.component';
 import {SerieListingComponent} from "../components/serie-listing/serie-listing.component";
 import {AppComponent} from "../app.component";
+import {LogToContentComponent} from "../components/log-to-content/log-to-content.component";
 
 
 const routes:Routes = [
-  {path:'', component:LoginPageComponent},
+  {path:'', component:LogToContentComponent},
   {path:'private', component:HomepageComponent},
   {path:'movie-list', component:MovieListingComponent},
   {path:'serie-list', component:SerieListingComponent},

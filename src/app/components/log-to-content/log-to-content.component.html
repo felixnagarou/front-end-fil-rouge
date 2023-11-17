@@ -1,0 +1,4 @@
+<p>log-to-content works!</p>
+<app-content-switchers (loginEvent) ="showComponent(true)" (logoutEvent) ="showComponent(false)"></app-content-switchers>
+<app-login-page *ngIf="!isAuthentified"></app-login-page>
+<app-homepage *ngIf="isAuthentified"></app-homepage>

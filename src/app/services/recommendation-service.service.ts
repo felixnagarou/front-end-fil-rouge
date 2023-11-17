@@ -10,10 +10,11 @@ export class RecommendationServiceService {
   constructor(private http:HttpClient) {
 
   }
-  configUrl:string = "assets/config.json"
+  url:string = "http://localhost:8080/api/v1/auth/private/home"
+
 
   getAllRecommendedMovies(){
-    return this.http.get<Movie[]>(this.configUrl + "recommended")
+    return this.http.get<Movie[]>(this.url + "/recommended")
 }
 
 
